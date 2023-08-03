@@ -16,3 +16,8 @@ jobs:
 
     - name: Building
       run: make pytorch
+      
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Images_folder
+        path: /git
