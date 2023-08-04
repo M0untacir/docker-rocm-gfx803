@@ -1,7 +1,7 @@
 all:
 	echo "TODO! :)"
 dev:
-	cd rocm-gfx803-dev && ./docker-build.sh && ./docker-publish.sh
+	cd rocm-gfx803-dev && ./docker-build.sh
 llamacpp: dev
 	cd rocm-gfx803-llamacpp && ./docker-build.sh
 pytorch_base: dev
