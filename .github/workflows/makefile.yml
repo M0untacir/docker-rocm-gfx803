@@ -31,8 +31,8 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: Wheel_Builds
-        # path: /usr/bin/git
-        path: /git
+        path: /usr/bin/git
+       # path: /git
         
       
 
