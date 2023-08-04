@@ -23,7 +23,7 @@ jobs:
     #       password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Building
-      run: make pytorch
+      run: make pytorch_builder
       # run: make pytorch
       
 
