@@ -8,7 +8,7 @@ echo "Building $docker_image_name:$docker_image_tag ..."
 docker_build -t "$docker_image_name:$docker_image_tag" .
 
 docker create --name dummy "$docker_image_name:$docker_image_tag"
-docker cp dummy:/path/to/file /home/
+docker cp dummy:/current/build /home/
 docker rm -f dummy
 
 
