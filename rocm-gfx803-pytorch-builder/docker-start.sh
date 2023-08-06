@@ -2,7 +2,7 @@
 source ../build-args.sh
 
 drun() {
-   sudo docker run -it --network=host --device=/dev/kfd --device=/dev/dri --ipc=host --shm-size 16G --group-add video --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v $HOME/dockerx:/dockerx -v $(pwd):/current "$@"
+   sudo docker run -t --network=host --device=/dev/kfd --device=/dev/dri --ipc=host --shm-size 16G --group-add video --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v $HOME/dockerx:/dockerx -v $(pwd):/current "$@"
 }
 
 docker_image_name="reda2020/rocm-gfx803-pytorch-builder"
