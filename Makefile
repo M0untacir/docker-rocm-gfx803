@@ -14,4 +14,4 @@ stable_diffusion_webui: pytorch
 	cd rocm-gfx803-stable-diffusion-webui && ./docker-build.sh
 
 pytorch_builder: pytorch_base
-	cd rocm-gfx803-pytorch-builder && ./docker-build.sh
+	cd rocm-gfx803-pytorch-builder && ./docker-build.sh && ./docker-start.sh
