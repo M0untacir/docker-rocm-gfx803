@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Building
-      run: make pytorch_builder
+      run: make pytorch_builder; pwd; ls
       # run: make pytorch
 
     # - name: Dump GitHub context
